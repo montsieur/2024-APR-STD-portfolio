@@ -35,15 +35,15 @@ header {
     color: #1C3C5C;
 }
 
-nav {
+#nav-items {
+    width: 100%;
     display: flex;
     justify-content: space-around;
+    font-size: 18px;
 }
 
-footer {
-    background-color: var(--primary-color);
-    text-align: center;
-    padding: 15px;
+#nav-items a {
+    text-decoration: none;
 }
 
 .socialmedia {
@@ -63,3 +63,32 @@ footer {
 .info p {
     margin: 5px 0;
 }
+
+@media screen and (min-width: 600px) {
+    header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .name {
+        margin-bottom: 0;
+    }
+
+    #nav-items {
+        width: 50%;
+    }
+
+    .socialmedia {
+        width: 50%;
+        margin-right:auto;
+        margin-left: auto;
+    }
+}
+
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 15px;
+}
+
