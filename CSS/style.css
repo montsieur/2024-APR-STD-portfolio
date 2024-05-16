@@ -2,10 +2,15 @@
     --primary-color: #FFBBBB;
     --secondary-color: #D9D9D9;
     --background-color: #8B8B8B;
+    
 }
 
 body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    justify-content: space-between;
 }
 
 header {
@@ -33,4 +38,28 @@ header {
 nav {
     display: flex;
     justify-content: space-around;
+}
+
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 15px;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 24px;
+}
+
+.socialmedia a i {
+    font-size: 30px;
+    color: rgb(63, 207, 255);
+}
+
+.info {
+    color: #1C3C5C;
+}
+.info p {
+    margin: 5px 0;
 }
