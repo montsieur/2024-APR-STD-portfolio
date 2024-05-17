@@ -1,0 +1,24 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+
+}
+
+.services-images img {
+    width: 400px;
+}
+
+article {
+    background-color: lightgray;
+    border-radius: 16%;
+    overflow: hidden;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* h3 {
+    margin: 24px 4px;
+    text-align: center;
+} */
