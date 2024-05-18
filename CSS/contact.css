@@ -1,0 +1,67 @@
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-elements {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.form-elements label {
+    font-size: 18px;
+}
+
+.form-input {
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    outline: none; /*used to remove border when hover*/
+    font-size: 18px;
+}
+
+/* not pseudo-class to apply on elements except another */
+.form-input:not(.form-textarea) {
+    height: 35px;
+}
+
+/* disables resizing option for users */
+.form-textarea {
+    resize: none;
+}
+
+/* focuses on the active box */
+.form-input:focus {
+    box-shadow: 10px 10px 5px 0px var(--primary-color);
+}
+
+.btn-div {
+    text-align: center;
+}
+
+#submit {
+    height: 40px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 4px;
+    min-width: 120px;
+    font-size: 20px;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: #ffb6b699;
+}
+
+@media screen and (min-width: 600px) {
+    .form {
+        width: 500px;
+    }
+
+    .form-elements {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+}
