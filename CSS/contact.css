@@ -2,6 +2,7 @@ main {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 24px;
 }
 
 .form-elements {
@@ -16,8 +17,8 @@ main {
 
 .form-input {
     border: 1px solid var(--primary-color);
-    border-radius: 4px;
     outline: none; /*used to remove border when hover*/
+    border-radius: 4px;
     font-size: 18px;
 }
 
@@ -55,13 +56,17 @@ main {
 }
 
 @media screen and (min-width: 600px) {
-    .form {
+    form {
         width: 500px;
     }
 
+    /* on desktop, it will have elements on the side of the input */
     .form-elements {
         flex-direction: row;
         justify-content: space-between;
     }
-    
+
+    .form-input {
+        width: 70%;
+    }
 }
