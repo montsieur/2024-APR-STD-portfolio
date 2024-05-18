@@ -11,5 +11,8 @@ The header component has a logo and name of the company along with the navigatio
 ### Footer
 The footer component has social media icon links and information containing company contact number and address.
 
-## Services
-The services page shows the services provided by the company with an image and a title of the services
+### Services
+The services page shows the services provided by the company with an image and a title of the services.
+
+### About
+The about page utilises CSS Grid to some information about the company.
